@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "AniTrackRN",
+    "slug": "anitrack",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "platforms": ["web", "android", "ios"],
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "@react-native-async-storage/async-storage"
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+.my-list-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 10px 16px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.tab.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.sort-control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sort-control label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sort-control select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-state p {
+  color: #999;
+  margin: 0 0 20px 0;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-button:hover {
+  color: #2980b9;
+}
+
+.anime-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.2s;
+  align-items: flex-start;
+}
+
+.list-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: #e0e0e0;
+}
+
+.list-item-image {
+  width: 80px;
+  height: 120px;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.list-item-content {
+  flex: 1;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.list-item-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-item-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #999;
+}
+
+.rating {
+  background-color: #fff3cd;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #856404;
+  font-weight: bold;
+}
+
+.episodes {
+  background-color: #e2e3e5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #383d41;
+}
+
+.date {
+  color: #999;
+  font-size: 11px;
+}
+
+.remove-button {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.remove-button:hover {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .list-item {
+    gap: 12px;
+  }
+
+  .list-item-image {
+    width: 60px;
+    height: 90px;
+  }
+
+  .list-item-content h3 {
+    font-size: 14px;
+  }
+
+  .list-item-meta {
+    font-size: 11px;
+  }
+}
