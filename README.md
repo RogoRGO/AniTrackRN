@@ -9,8 +9,7 @@ Apoi deschizi:
 http://127.0.0.1:5173
 sau URL-ul afisat in terminal de Vite.
 
-Pentru Expo app: momentan nu va merge in Expo Go, pentru ca proiectul a fost facut acum ca React Web app cu Vite, react-router-dom, CSS files si localStorage. Expo/React Native nu suporta direct CSS imports, DOM window.localStorage, BrowserRouter, img, div, etc.
-
+Proiectul a fost facut acum ca React Web app cu Vite, react-router-dom, CSS files si localStorage.
 
 Mobile Expo este in mobile/App.tsx.
 
